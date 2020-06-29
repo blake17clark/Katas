@@ -6,13 +6,15 @@ function accum(input) {
     // 	split the string for each letter
     // iterate the letters
     for (let i = 0; i < input.length; i++) {
+      const currentLetter = input[i];
       //add lower case i+1 i-1 times to string
-      for (let j =0; j < i + 1; j++) {
+      const totalCount = i + 1;
+      for (let counter =0; counter < totalCount; counter++) {
       //capitalize beginning letter
-      if(j==0) {
-        result += input [i].toUpperCase();
+      if(counter==0) {
+        result += currentLetter.toUpperCase();
         }else {
-        result += input[i].toLowerCase();
+        result += currentLetter.toLowerCase();
       }
     }
     // add dash if not last letter

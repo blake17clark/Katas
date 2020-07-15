@@ -38,8 +38,8 @@ console.log('Broken Villians', brokenVillians);
 //add value to somewhere in the middle of arrays
 hereos.splice(2, 0, "Buzz Lightyear");
 villians.splice(2, 0, "Zurg");
-printArrays('----After Spice');
+printArrays('----After Splice');
 //Remove value somewhere in middle
 const buzz = hereos.splice(2, 1);
 const zurg = villians.splice(2, 1);
-printArrays(`----After Spice Delete ${buzz} & ${zurg} :`);
+printArrays(`----After Splice Delete ${buzz} & ${zurg} :`);
